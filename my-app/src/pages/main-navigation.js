@@ -67,13 +67,13 @@ function MainNavigation() {
             ) : (
               <li>
                 <Link href="/signup" passHref>
-                  <button
+                  {/* <button
                     className={`px-4 py-2 block bg-white text-black font-semibold border border-black cursor-pointer hover:bg-black hover:text-white hover:border-black mr-6 text-[0.8rem] mt-0 rounded-lg shadow hover:scale-110 ease-in duration-300 ${
                       open ? "my-2" : ""
                     }`}
                   >
                     Sign up
-                  </button>
+                  </button> */}
                 </Link>
               </li>
             )}

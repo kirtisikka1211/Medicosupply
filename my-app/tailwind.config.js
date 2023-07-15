@@ -24,7 +24,7 @@ module.exports = {
           "500": "rgba(0, 0, 0, 0.67)",
           "600": "rgba(216, 145, 126, 0.5)",
         },
-        darksalmon: "#e48d7a",
+        darksalmon: "#14A3C2",
         dimgray: "#4f4b6b",
         mistyrose: "rgba(234, 212, 212, 0.37)",
         gainsboro: "rgba(217, 217, 217, 0)",

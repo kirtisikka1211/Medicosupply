@@ -32,7 +32,7 @@ const AboutPage = () => {
 
         <div className="justify-self-center md:mr-4 ml-4 mr-4">
           <h1 className="text-[2rem] md:text-[3rem] mb-6 text-center font-semibold  text-darksalmon font-quicksand">
-            Welcome to Booktown Foundation
+          Welcome to Medico
           </h1>
           <p className="text-[1rem] text-gray-700 md:text-[1.3rem] text-center md:mt-3 leading-[2rem]">
             Booktown Foundation is a non-profit organization that provides books

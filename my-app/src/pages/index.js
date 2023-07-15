@@ -22,19 +22,14 @@ const LandingPage = () => {
         <div className="grid grid-cols-1 justify-self-center md:content-start lg:mt-12 sm:order-first md:justify-self-start md:ml-10 lg:ml-20 mr-11 ml-11">
           <div className="justify-self-center place-content-center md:place-self-start md:mt-8">
             <p className="[border:none] bg-[transparent] block font-montserrat text-[1.8rem] sm:ml-2 sm:text-[1.3rem] mt-5 lg:mt-0 text-center sm:text-start lg:text-[2.1rem]">
-              A world of books at
-              your fingertips.
+            Empower your healthcare journey with the convenience of rental and buying services.
             </p>
-            <p className="[border:none] bg-[transparent] text-gray-400 font-montserrat-thin mt-6 mb-4 md:ml-2 text-[1.1rem] sm:text-[0.9rem] text-center md:mt-3 sm:text-start lg:text-[1.3rem]">
-              Welcome to our website, where you can
-              give your gently used books a new life and help
-              spread the joy of reading to others.
-            </p>
+          
           </div>
           <div className="md:mt-2 justify-self-center place-self-center sm:ml-2 sm:place-self-start">
             <Link href="/donate" passHref>
               <button className=" px-6 py-3 sm:px-3 sm:py-2 md:px-4 md:py-2 lg:px-8 lg:py-3 bg-black text-white text-[0.9rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.95rem] font-semibold border border-black rounded cursor-pointer hover:bg-white hover:text-black hover:border-black mr-5">
-                Donate Now
+                Buy Now
               </button>
             </Link>
             <Link href="/About" passHref>
@@ -46,53 +41,21 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-y-4 place-content-center justify-items-center lg:grid-cols-2">
-        <div className="mt-8 lg:ml-14 lg:mt-10 sm:justify-self-center lg:justify-self-start lg:place-self-center ">
+        <div  
+        className="mt-8 lg:ml-14 lg:mt-10 sm:justify-self-center lg:justify-self-start lg:place-self-center ">
           <img
-            className="w-[23.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[28.25rem]"
+            className="w-[40.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[28.25rem]"
             alt=""
             src="/aa23d4bca20b4f568e95eb777e5529ad-1@2x.png"
           />
         </div>
         <div className="grid grid-cols-1 lg:justify-self-end sm:mr-14 sm:ml-14 lg:ml-24 lg:mt-4 md:mr-20 md:ml-20">
           <div className="justify-self-center mt-6 ">
-            <h2 className="text-[1.8rem] justify-self-center text-center font-semibold mb-4 lg:text-start">
-              ABOUT US
-            </h2>
-            <p className="font-medium text-[1rem] sm:text-[1.2rem] ml-2 mr-2 leading-[2rem] text-center lg:text-start text-gray-700">
-              A dedicated team of volunteers who want to do their bit of good
-              towards the society. It all started when we wanted to donate our
-              old books. We wanted them to be of good use to someone, someone
-              who really needs it. And thus popped the idea, of collecting books
-              and giving it to the needy. We realized there are many kids who
-              aren't so privileged and can't afford to purchase even the
-              textbooks. This thought made us work passionately towards this
-              cause and we started this journey to make sure that the extra
-              books lying on your shelves reach those who can't afford them.
-            </p>
+          
           </div>
 
           <div className="place-self-center lg:place-self-start">
-            <p className="m-0 text-[1.55rem] md:mt-6 font-semibold mt-5 text-center lg:text-start ">
-              Our motto: Har haath kitaab
-            </p>
-            <br />
-            <div className="text-[1.2rem] font-semibold justify-self-center text-start ml-2 lg:text-start text-gray-700">
-              <ul className="space-y-4 list-disc text-gray-700 sm:text-[1.2rem]">
-                <li>To be accessible to every individual who needs books.</li>
-                <li>
-                  To collect books from as many people as possible and give them
-                  a chance to be a part of this initiative.
-                </li>
-                <li>
-                  To make people aware how important and valuable is their
-                  contribution towards the society.
-                </li>
-                <li>
-                  Since it is a donation (monetary) free NGO, we aim to
-                  encourage people to lend a helping hand to the needy.
-                </li>
-              </ul>
-            </div>
+            
           </div>
         </div>
       </div>
