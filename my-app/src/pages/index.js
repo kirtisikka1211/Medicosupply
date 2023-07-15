@@ -70,15 +70,11 @@ const LandingPage = () => {
               <img
                 className="rounded-t-xl rounded-b-none w-[21rem] h-[19.5rem] md:w-[26rem] md:h-[24.5rem] object-fit"
                 alt=""
-                src="/image-1@2x.png"
+                src="/image 1.png"
               />
               <div className="inline-block">
                 <p className=" text-[1.8rem] font-medium">
-                  Collection
-                </p>
-                <p className="text-[1rem] ml-3 mr-3 md:text-[1.2rem] font-light text-gray-700">
-                  We collect used/new books from individuals, schools,
-                  corporates, etc who are willing to support the cause.
+                   Quality Products
                 </p>
               </div>
             </div>
@@ -88,14 +84,11 @@ const LandingPage = () => {
               <img
                 className="rounded-t-xl rounded-b-none mt-[0.55rem] mb-2 w-[20rem] h-[18.5rem] md:w-[24.55rem] md:h-[23.1rem] drop-shadow-md object-fit"
                 alt=""
-                src="/image-2@2x.png"
+                src="/image 2 (1).png"
               />
               <div className="inline-block">
                 <p className="[margin-block-start:7px] text-[1.8rem] font-medium">
-                  Sorting
-                </p>
-                <p className="text-[1rem] md:text-[1.2rem] ml-3 mr-3 font-light text-gray-700">
-                  Recycling those that are worn out/torn/not in good shape.
+                  Customer Satisfaction
                 </p>
               </div>
             </div>
@@ -105,16 +98,12 @@ const LandingPage = () => {
               <img
                 className="rounded-t-xl rounded-b-none w-[21rem] h-[19.5rem] md:w-[26rem] md:h-[24.5rem] object-fit"
                 alt=""
-                src="/image-3@2x.png"
+                src="/image 3.png"
               />
               <div className="inline-block">
                 
                 <p className="text-[1.8rem] font-medium">
-                  Distribution
-                </p>
-                <p className="text-[1rem] md:text-[1.2rem] ml-3 mr-3 font-light text-gray-700">
-                  We distribute books via book stalls at govt. schools. We also
-                  provide books to credible NGOs in education domain.
+                  Faster Delivery and Secure Transaction
                 </p>
               </div>
             </div>
