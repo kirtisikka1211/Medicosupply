@@ -15,7 +15,7 @@ function MainNavigation() {
       <div className="flex items-center justify-between xl:max-w-8xl  max-w-full px-[8%] flex-wrap w-full bg-white fixed">
         <img
           src="/your-place-to-readremovebgpreview-1@2x.png"
-          width={210}
+          width={150}
           height={65}
         />
 

@@ -35,14 +35,9 @@ const AboutPage = () => {
           Welcome to Medico
           </h1>
           <p className="text-[1rem] text-gray-700 md:text-[1.3rem] text-center md:mt-3 leading-[2rem]">
-            Booktown Foundation is a non-profit organization that provides books
-            to the needy in multiple Indian languages. Everyone has the right to
-            read and we ensure it. Books help us throughout our lives in shaping
-            person our future Money is not a big concern for us and thus, we
-            don't accept donations in cash. If you really want to help someone,
-            just donate us your old books, books that you don't anymore. As a
-            nonprofit organization, our dream is to see a world where no one has
-            to worry for these knowledgeable assets.
+          At Medico, we are dedicated to providing you with a seamless experience in purchasing hospital equipment. We understand the critical role that high-quality medical devices play in patient care, and our goal is to make the process of acquiring essential equipment as efficient and reliable as possible.
+
+
           </p>
         </div>
         

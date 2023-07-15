@@ -1,4 +1,6 @@
 import Button from "./button";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./button";
 import MainNavigation from "./main-navigation";
 import Link from "next/link";
@@ -40,16 +42,41 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-y-4 place-content-center justify-items-center lg:grid-cols-2">
-        <div  
-        className="mt-8 lg:ml-14 lg:mt-10 sm:justify-self-center lg:justify-self-start lg:place-self-center ">
-          <img
-            className="w-[28.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[28.25rem]"
-            alt=""
-            src="/aa23d4bca20b4f568e95eb777e5529ad-1@2x.png"
-          />
-        </div>
+      <div className=" place-content-center justify-items-center lg:grid-cols-2">
+      <div className="mt-8 lg:ml-0.1 lg:mt-10 sm:justify-self-center lg:justify-self-start lg:place-self-center">
+        <Carousel
+          showArrows={true}
+          infiniteLoop={true}
+          autoPlay={true}
+          interval={3000} // Change slide every 3 seconds
+          showThumbs={false}
+          style={{ width: '100%' }}
+        >
+          <div>
+            <img
+              className="w-[28.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[38.25rem]"
+              alt=""
+              src="/aa23d4bca20b4f568e95eb777e5529ad-1@2x.png"
+            />
+          </div>
+          <div>
+            <img
+              className="w-[28.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[38.25rem]"
+              alt=""
+              src="https://img.freepik.com/premium-photo/hospital-room-with-large-operating-room-large-monitor-ceiling_374761-1278.jpg?w=2000"
+            />
+          </div>
+          <div>
+            <img
+              className="w-[28.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[38.25rem]"
+              alt=""
+              src="https://media.istockphoto.com/id/501707914/photo/empty-hospital-operating-theatre-with-lighting-over-bed.jpg?s=612x612&w=0&k=20&c=m7wuxOz_aSfSgDDTE7GyC9He0ZgMgPH6Ny9Hf7QXDEs="
+            />
+          </div>
+        </Carousel>
       </div>
+    </div>
+
 
       <div className="grid grid-cols-1 mt-14 place-items-center sm:grid-cols-1 mb-5">
         <div className="text-[1.7rem] text-center md:text-[3.2rem] justify-self-center font-semibold text-darksalmon inline-block">
@@ -57,7 +84,7 @@ const LandingPage = () => {
         </div>
         <div className="grid grid-cols-1 gap-y-7 md:gap-x-10 mt-8 md:grid-cols-1 lg:grid-cols-3">
           <div className="text-center font-bold text-[1.7rem] md:text-[2rem] lg:mr-9">
-            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[34.9rem]">
+            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[30.9rem]">
               <img
                 className="rounded-t-xl rounded-b-none w-[21rem] h-[19.5rem] md:w-[26rem] md:h-[24.5rem] object-fit"
                 alt=""
@@ -72,7 +99,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="text-center font-bold text-[1.7rem] md:text-[2rem] lg:mr-9">
-            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[34.9rem]">
+            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[30.9rem]">
               <img
                 className="rounded-t-xl rounded-b-none mt-[0.55rem] mb-2 w-[20rem] h-[18.5rem] md:w-[24.55rem] md:h-[23.1rem] drop-shadow-md object-fit"
                 alt=""
@@ -86,7 +113,7 @@ const LandingPage = () => {
             </div>
           </div>
           <div className="text-center font-bold text-[1.7rem] md:text-[2rem] mb-3">
-            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[34.9rem]">
+            <div className="rounded-xl bg-white shadow-[0px_4px_20px_2px_rgba(0,_0,_0,_0.25)] mt-6 w-[20.88rem] h-[28.63rem] md:w-[25.88rem] md:h-[30.9rem]">
               <img
                 className="rounded-t-xl rounded-b-none w-[21rem] h-[19.5rem] md:w-[26rem] md:h-[24.5rem] object-fit"
                 alt=""

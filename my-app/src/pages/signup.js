@@ -46,7 +46,7 @@ function Signup() {
         </Alert>
       </Snackbar> 
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 bg-mistyrose px-20 text-center">
+      <main className="ml-[150px] flex flex-col items-center justify-center w-full flex-1 bg-mistyrose px-20 text-center">
         <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-1   ">
           <div className="">
             <div className="bg-white rounded-tr-2xl  md:w-[32rem] rounded-tl-2xl md:rounded-tl-2xl md:rounded-bl-2xl md:rounded-tr-none shadow-2xl  max-w-4xl">
@@ -54,7 +54,7 @@ function Signup() {
                 <div className=" sm:block justify-self-center">
                   <img
                     src="/your-place-to-readremovebgpreview-1@2x.png"
-                    width={210}
+                    width={150}
                     height={65}
                   />
                 </div>
@@ -121,7 +121,7 @@ function Signup() {
             </div>
           </div>
           <div className="h-[12rem] rounded-br-2xl rounded-bl-2xl md:rounded-tr-2xl bg-darksalmon md:place-self-start ">
-            <div className="h-[0.1rem] w-[18.6rem] md:h-[29.43rem]  md:pt-[8rem] md:w-[20rem]    md:rounded-br-2xl   md:rounded-tr-2xl md:rounded-bl-[0px] bg-darksalmon text-white text-center rounded-br-2xl rounded-bl-2xl mt-7 ">
+            <div className="h-[0.1rem] w-[18.6rem] md:h-[32.9rem]  md:pt-[8rem] md:w-[20rem]    md:rounded-br-2xl   md:rounded-tr-2xl md:rounded-bl-[0px] bg-darksalmon text-white text-center rounded-br-2xl rounded-bl-2xl mt-7 ">
               <h2 className="  text-2xl font-bold mb-2">Register</h2>
               <div className="border-2 border-solid w-10 border-white inline-block mb-2"></div>
               <p className=" text-center mb-3 mt-2  ">
