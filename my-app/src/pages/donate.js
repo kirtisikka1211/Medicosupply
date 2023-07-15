@@ -147,8 +147,8 @@ for (var i = 0; i < stringify.length; i++) {
         <div
           style={{
             backgroundColor: "white",
-            height: "10vh",
-            width: "210vh",
+            height: "1vh",
+            width: "150vh",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
@@ -294,10 +294,12 @@ for (var i = 0; i < stringify.length; i++) {
                                 <div className="w-[21.4rem] place-self-end md:w-1/1 px-3 mb-6 ">
                                     <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-darksalmon focus:border-darksalmon hover:border-darksalmon block w-full p-2.5" name="type" id="type" defaultValue={"Select Type"} onChange={e => handleTypes(index, e)}>
                                         <option disabled>Select Type</option>
-                                        <option className="hover:bg-darksalmon text-black hover:text-white focus:text-white focus:ring-0 focus:bg-darksalmon">Pre-Primary</option>
-                                        <option>Primary</option>
-                                        <option>Secondary</option>
-                                        <option>Senior-Secondary</option>
+                                        <option className="hover:bg-darksalmon text-black hover:text-white focus:text-white focus:ring-0 focus:bg-darksalmon">
+                       Ventilators
+                      </option>
+                      <option>Oxygen Cylinders</option>
+                      <option>X-Ray machines</option>
+                      <option>Displays</option>
                                     </select>
                                 </div>
                                 <div className="w-[21.4rem] md:w-1/1 px-3 mb-6 md:mb-0">
@@ -396,14 +398,12 @@ for (var i = 0; i < stringify.length; i++) {
 
                 </div>
                 <div className="">
-                <Link href="/payment" passHref>
                   <button
                     type="submit"
                     className="text-white bg-darksalmon hover:bg-white hover:text-darksalmon border-darksalmon font-medium rounded-lg text-sm w-full sm:w-auto px-9 py-2.5 text-center text-[1rem]"
                   >
                     Submit
                   </button>
-                </Link>
                 </div>
               </div>
             </form>
