@@ -49,7 +49,7 @@ function MainNavigation() {
             <li>
               <Link
                 className="lg:px-5 py-2 block hover:text-darksalmon font-semibold hover:scale-110 ease-in duration-300"
-                href="/donate"
+                href="/products"
               >
                 Products
               </Link>

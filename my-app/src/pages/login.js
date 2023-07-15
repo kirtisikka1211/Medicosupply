@@ -11,22 +11,22 @@ function Login() {
   const [password, setPassword] = useState("");
   const [open, setOpen] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
-  const { login, error, clearError } = useContext(AuthenticationContext);
+  // const { login, error, clearError } = useContext(AuthenticationContext);
 
-  useEffect(() => {
-    if (error) {
-      setErrorMessage(error);
-      setOpen(true);
-      clearError();
-    }
-  }, [error]);
+  // useEffect(() => {
+  //   if (error) {
+  //     setErrorMessage(error);
+  //     setOpen(true);
+  //     clearError();
+  //   }
+  // }, [error]);
 
   const router = useRouter();
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    login({ username, password });
-  };
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+  //   login({ username, password });
+  // };
 
   const handleClose = () => {
     setOpen(false);
@@ -41,9 +41,9 @@ function Login() {
         autoHideDuration={6000}
         key={"top_center"}
       >
-        <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+        {/* <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
           {errorMessage}
-        </Alert>
+        </Alert> */}
       </Snackbar>
 
       <main className="flex flex-col items-center justify-center  px-20 text-center">
@@ -64,7 +64,7 @@ function Login() {
               <div className="border-2 border-solid w-10 border-darksalmon inline-block mb-2"></div>
             </div>
             <div className="flex flex-col items-center">
-              <form onSubmit={submitHandler} className="w-64">
+              <form  className="w-64">
                 <div className="bg-gray-50 p-2 flex items-center">
                   <input
                     type="text"

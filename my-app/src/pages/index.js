@@ -29,7 +29,7 @@ const LandingPage = () => {
           
           </div>
           <div className="md:mt-2 justify-self-center place-self-center sm:ml-2 sm:place-self-start">
-            <Link href="/donate" passHref>
+            <Link href="/products" passHref>
               <button className=" px-6 py-3 sm:px-3 sm:py-2 md:px-4 md:py-2 lg:px-8 lg:py-3 bg-black text-white text-[0.9rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.95rem] font-semibold border border-black rounded cursor-pointer hover:bg-white hover:text-black hover:border-black mr-5">
                 Buy Now
               </button>
