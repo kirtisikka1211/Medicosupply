@@ -62,7 +62,13 @@ function PaymentForm() {
 
   
   return (
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden  bg-[#daf5ffe3]" style={{ backgroundImage: `/Medicosupply/my-app/public/bg2.jpg`, backgroundSize: 'cover', backgroundPosition: 'center center',opacity:1 }}>
+    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden  bg-[#daf5ffe3]" tyle={{
+        backgroundImage: url("/image-4@2x.png"),
+        height: "35vh",
+        width: "220vh",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}>
         <div className="w-full p-20 m-auto bg-white bg-opacity- rounded-md  shadow-lg lg:max-w-xl ">
             <h1 className="text-3xl font-semibold text-center text-blue-600  uppercase ">Payment form</h1>
         <form className="mt-6" onSubmit={handleSubmit}>
