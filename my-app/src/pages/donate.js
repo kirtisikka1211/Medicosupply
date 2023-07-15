@@ -148,7 +148,7 @@ for (var i = 0; i < stringify.length; i++) {
           style={{
             backgroundColor: "white",
             height: "1vh",
-            width: "150vh",
+            width: "0vh",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
           }}
