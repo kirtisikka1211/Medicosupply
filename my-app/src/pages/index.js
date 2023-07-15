@@ -44,19 +44,10 @@ const LandingPage = () => {
         <div  
         className="mt-8 lg:ml-14 lg:mt-10 sm:justify-self-center lg:justify-self-start lg:place-self-center ">
           <img
-            className="w-[40.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[28.25rem]"
+            className="w-[28.25rem] h-[17.25rem] justify-self-center sm:w-[26.25rem] sm:h-[20.25rem] md:w-[33.25rem] md:h-[25.25rem] lg:w-[38.25rem] lg:h-[28.25rem]"
             alt=""
             src="/aa23d4bca20b4f568e95eb777e5529ad-1@2x.png"
           />
-        </div>
-        <div className="grid grid-cols-1 lg:justify-self-end sm:mr-14 sm:ml-14 lg:ml-24 lg:mt-4 md:mr-20 md:ml-20">
-          <div className="justify-self-center mt-6 ">
-          
-          </div>
-
-          <div className="place-self-center lg:place-self-start">
-            
-          </div>
         </div>
       </div>
 

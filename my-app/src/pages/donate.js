@@ -24,28 +24,6 @@ const DonatePage = () => {
     },
   ]);
   
-  // const addInputField = () => {
-  //   setInputFields([
-  //     ...inputFields,
-  //     {
-  //       category: "",
-  //       num: "",
-  //     },
-  //   ]);
-  // };
-  // const removeInputFields = (index) => {
-  //   const rows = [...inputFields];
-  //   rows.splice(index, 1);
-  //   setInputFields(rows);
-  // };
-  // const handleChange = (index, evnt) => {
-  //   const { name, value } = evnt.target;
-  //   const list = [...inputFields];
-  //   list[index][name] = value;
-  //   setInputFields(list);
-  
-  // };
-  // console.log(inputFields);
  let dataValue={
     pre_primary:0,
     primary:0,
@@ -139,15 +117,7 @@ for (var i = 0; i < stringify.length; i++) {
         console.log(result);
    }
     const DonationInfo = async () => {
-    // for(i=0;i<json.length; i++){
-    //   if(json[i].category=='Pre-Primary'){
-    //     // console.log('yes');
-    //     setPre_primary(json[i].num);
-    //   }
-    //   else if(json[i].category=='Primary'){
-    //     setPrimary(json[i].num);
-    //   }
-    // }
+
     let formField = new FormData();
     formField.append("email", email);
     formField.append("full_name", full_name);
@@ -160,16 +130,6 @@ for (var i = 0; i < stringify.length; i++) {
     formField.append("pre_primary", pre_primary);
     formField.append("secondary", secondary);
     formField.append("senior_secondary", senior_secondary);
-    // for(i=0;i<json.length; i++){
-    //   if(json[i].category=='Pre-Primary'){
-    //     console.log('yes');
-    //     formField.append("primary", json[i].num);
-    //   }
-    //   else if(json[i].category=='Primary'){
-    //     formField.append("pre_primary", json[i].num);
-    //   }
-    // }
-    
 
     await axios({
       method: "post",
@@ -203,19 +163,15 @@ for (var i = 0; i < stringify.length; i++) {
             src="/dab20razorpay20lead20photo-koznvw5y6htr2qjpeg@2x.png"
           />
         </div>
-        {user ? (
+         
           <div>
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 gap-6 mt-4 sm:place-items-center justify-items-center py-6 md:justify-self-end md:mt-20 md:ml-20">
                 <div className="text-center h-[3rem] md:mb-10 justify-self-center sm:justify-self-center md:text-center md:ml-3 ">
-                  <h2 className="text-black text-[1.5rem] md:text-[2rem]">
-                    Donate a book to Booktown Foundation
-                  </h2>
+                
                 </div>
                 <div className="text-center h-[3rem] justify-self-center sm:justify-self-center md:text-center md:ml-3">
-                  <h3 className="text-darksalmon text-[1.4rem]">
-                    #NewChapterForOldBooks.
-                  </h3>
+                  
                 </div>
                 <div className="w-[20rem] md:w-[20rem]">
                   <label
@@ -319,23 +275,17 @@ for (var i = 0; i < stringify.length; i++) {
                     htmlFor="n_books"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
-                    Number of books to donate
+                   Number of Machines
                   </label>
                   <input
                     type="text"
                     id="n_books"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-darksalmon focus:border-darksalmon hover:border-darksalmon block w-full p-2.5 "
-                    placeholder="Number of books"
+                    placeholder="Number of Machines"
                     required
                     name="n_books"
                   />
-                  {/* <input
-                      type="hidden"
-                      id="username"
-                      className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-darksalmon focus:border-darksalmon hover:border-darksalmon block w-full p-2.5 "
-                      onChange={(e) => setUsername(e.target.value)}
-                      value={username}
-                    /> */}
+                  
                 </div>
              
                     <div className="col-sm-12">
@@ -422,48 +372,7 @@ for (var i = 0; i < stringify.length; i++) {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                  Please read these Terms and Conditions carefully before using the book donation form on our website.<br/>
-
-Acceptance of Terms and Conditions<br/>
-By accessing or using the book donation form on our website, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not proceed with the donation process.<br/>
-
-Book Donation Eligibility<br/>
-2.1 The book donation form is intended for individuals or organizations who wish to donate books.<br/>
-2.2 By submitting the donation form, you confirm that you are the legal owner of the books or have obtained the necessary permissions to donate them.<br/>
-
-Book Donation Process<br/>
-3.1 Complete and submit the book donation form with accurate and up-to-date information.<br/>
-3.2 Once you submit the form, you grant us the right to review the details provided and accept or decline the donation at our discretion.<br/>
-3.3 We reserve the right to refuse any book donation without providing a reason for the refusal.<br/>
-
-Book Condition<br/>
-4.1 By donating books, you confirm that the books are in good condition, free from excessive damage, mold, or other issues that may render them unfit for use.<br/>
-4.2 We reserve the right to inspect the donated books upon receipt and determine their suitability for our purposes.<br/>
-4.3 Books that do not meet our criteria may be declined or disposed of at our discretion.<br/>
-
-Ownership and Rights<br/>
-5.1 By donating books, you transfer ownership of the donated books to us.<br/>
-5.2 We reserve the right to retain, sell, or dispose of the donated books as we see fit.<br/>
-5.3 We may use the donated books for our own purposes, including but not limited to resale, distribution, or charitable activities.<br/>
-
-Personal Information<br/>
-6.1 By submitting the book donation form, you agree to provide accurate and complete personal information.<br/>
-6.2 We will handle your personal information in accordance with our Privacy Policy, which is available on our website.<br/>
-
-Liability<br/>
-7.1 We make no guarantees or warranties regarding the suitability, quality, or condition of the donated books.<br/>
-7.2 We shall not be held liable for any loss, damage, or injury arising from the donation, use, or handling of the donated books.<br/>
-7.3 You agree to indemnify and hold us harmless from any claims, costs, or damages arising from your donation or breach of these Terms and Conditions.<br/>
-
-Modifications and Termination<br/>
-8.1 We reserve the right to modify or terminate the book donation form or these Terms and Conditions at any time without prior notice.<br/>
-8.2 It is your responsibility to review the Terms and Conditions periodically for any changes.<br/>
-8.3 Continued use of the book donation form after any modifications indicates your acceptance of the updated Terms and Conditions.<br/>
-
-Governing Law<br/>
-These Terms and Conditions shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any disputes arising under or in connection with these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts of [Jurisdiction].<br/>
-
-By using the book donation form, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
+                  
                   </p>
                 </div>
                 {/*footer*/}
@@ -496,33 +405,7 @@ By using the book donation form, you acknowledge that you have read, understood,
                 </div>
               </div>
             </form>
-          </div>
-        ) : (
-          <div>
-            <div className="grid grid-cols-1 h-[20rem] object-center place-items-center bg-mistyrose">
-              <div className="text-center justify-self-center sm:justify-self-center md:text-center md:ml-3">
-                <h2 className="text-black text-[1.5rem] md:text-[2rem]">
-                  Donate a book to Bookown Foundation
-                </h2>
-              </div>
-              <div className=" text-center h-[2rem] justify-self-center sm:justify-self-center md:text-center md:ml-3">
-                <h3 className="text-darksalmon md:text-[1.4rem]">
-                  #NewChapterForOldBooks.
-                </h3>
-              </div>
-              <div className="text-[1.3rem] text-black font-quicksand">
-                Please login to fill the donation form
-              </div>
-              <div className="justify-self-center">
-                <Link href="/login" passHref>
-                  <button className="px-6 py-2 block bg-darksalmon text-white font-semibold border border-darksalmon cursor-pointer hover:bg-white hover:text-darksalmon rounded-lg shadow hover:scale-110 ease-in duration-300">
-                    Login
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
+          </div>  
       </div>
       <Footer />
     </div>

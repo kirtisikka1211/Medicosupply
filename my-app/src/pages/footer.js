@@ -40,7 +40,6 @@ const Footer = () => {
 			</div>
 		</div>
 		<div className="justify-self-end self-end sm:order-last bg-black">
-			<WhatsAppIcon/>
 		</div>
 	
 	</div>
@@ -54,9 +53,6 @@ const Footer = () => {
 	</div>
 </footer>
         
-     
-     
-
         
    
     
