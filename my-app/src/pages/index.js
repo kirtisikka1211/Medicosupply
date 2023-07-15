@@ -65,7 +65,8 @@ const LandingPage = () => {
               />
               <div className="inline-block">
                 <p className=" text-[1.8rem] font-medium">
-                   Quality Products
+                <Link href="/products" passHref>
+                   Quality Products</Link>
                 </p>
               </div>
             </div>
