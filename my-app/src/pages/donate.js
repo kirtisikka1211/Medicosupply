@@ -396,12 +396,14 @@ for (var i = 0; i < stringify.length; i++) {
 
                 </div>
                 <div className="">
+                <Link href="/payment" passHref>
                   <button
                     type="submit"
                     className="text-white bg-darksalmon hover:bg-white hover:text-darksalmon border-darksalmon font-medium rounded-lg text-sm w-full sm:w-auto px-9 py-2.5 text-center text-[1rem]"
                   >
                     Submit
                   </button>
+                </Link>
                 </div>
               </div>
             </form>

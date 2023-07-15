@@ -62,8 +62,9 @@ function PaymentForm() {
 
   
   return (
-    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden  bg-[#daf5ffe3]" tyle={{
-        backgroundImage: url("/image-4@2x.png"),
+    <div className="relative flex flex-col justify-center min-h-screen overflow-hidden  bg-[#daf5ffe3]" 
+    style={{
+        backgroundImage: `url("/bg2.jpg")`,
         height: "35vh",
         width: "220vh",
         backgroundRepeat: "no-repeat",
