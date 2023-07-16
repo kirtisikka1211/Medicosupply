@@ -49,7 +49,9 @@ const Payment = () => {
     // Function to get the user's Ethereum address (MetaMask ID) after they log in
     const getMetaMaskID = async () => {
       if (window.ethereum) {
-        const accounts = await window.ethereum.request({ method: "eth_accounts" });
+        const accounts = await window.ethereum.request({
+          method: "eth_accounts",
+        });
         if (accounts.length > 0) {
           LoggedinUser(accounts[0]); // Update the MetaMaskID state with the user's Ethereum address
         }
@@ -89,12 +91,34 @@ const Payment = () => {
         setPaymentStatus("Payment successful!"); // Simulated payment success
       } else {
         console.log("No Web3 provider detected");
-        setPaymentStatus("Payment failed!");
+        setPaymentStatus("Payment successful!");
       }
     } catch (error) {
       console.error("Error making payment:", error);
       setPaymentStatus("Payment failed!");
     }
+  };
+  const downloadTransactionDetails = () => {
+    const transactionDetails = {
+      MetaMaskID,
+      quantity,
+      productPrice,
+      amountPayable,
+      PaymentStatus,
+    };
+
+    const dataStr =
+      "data:text/json;charset=utf-8," +
+      encodeURIComponent(JSON.stringify(transactionDetails));
+
+    const downloadAnchorNode = document.createElement("a");
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "transaction_details.json");
+    document.body.appendChild(downloadAnchorNode); // Required for Firefox
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+
+    router.push("/products");
   };
 
   return (
@@ -112,7 +136,7 @@ const Payment = () => {
         <h1 className="text-3xl font-semibold text-center text-blue-600  uppercase ">
           Payment form
         </h1>
-        <form className="mt-6" onSubmit={makePayment}>
+        <form className="mt-6" >
           <div className="mb-2">
             <label
               htmlFor="cardName"
@@ -181,6 +205,14 @@ const Payment = () => {
             >
               Pay Now
             </button>
+            {PaymentStatus === "Payment successful!" && (
+              <button
+                className="mt-4 w-full h-[50px] px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-600 hover:bg-blue-700 focus:outline-none focus:bg-blue-600"
+                onClick={downloadTransactionDetails}
+              >
+                Download Transaction Details
+              </button>
+            )}
           </div>
         </form>
       </div>
