@@ -27,7 +27,7 @@ const contractAbi = [
 // This is the vendor contract address
 // you get after deploying the contract
 // using truffle migrate --reset
-const contractAddress = "0xeA79a2Eb70445279e233f8b2224363eFd7B67bfD";
+const contractAddress = "0x988d4DcacaC38a5Ae52D2CCA6C5594492Ec47e58";
 
 // Web3 Instance
 let web3;

@@ -31,7 +31,7 @@ const contractAbi = [
 // This is the vendor contract address
 // you get after deploying the contract
 // using truffle migrate --reset
-const contractAddress = "0x18e00f1B52242dC970c8128F77aEF55c2155Fe12";
+const contractAddress = "0x8e4a8283604E1f4ec27cEF5EC4e0E4CB274b7dB4";
 
 const Payment = () => {
   const router = useRouter();
