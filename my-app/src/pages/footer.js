@@ -35,7 +35,7 @@ const Footer = () => {
 				<div > CENTRAL DELHI, India (IN), Pin Code:- 110001</div>
 
 				<div >91+ 9868XXXXX</div>
-                <div > info@booktownfoundation.org</div>
+                <div > info@medisupplyfoundation.org</div>
 				
 			</div>
 		</div>

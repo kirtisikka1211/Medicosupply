@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import MainNavigation from "./main-navigation";
+import Footer from "./footer";
 
 const Home = () => {
   const router = useRouter();
@@ -74,6 +76,7 @@ const Home = () => {
 
   return (
     <div className="main">
+      <MainNavigation />
       {/* Header code */}
       <div className="w-full py-10 px-9 sm:px-10">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -106,7 +109,9 @@ const Home = () => {
             </div>
           ))}
         </div>
+        
       </div>
+      <Footer />
     </div>
   );
 };

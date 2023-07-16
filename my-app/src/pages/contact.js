@@ -384,7 +384,7 @@ const Contact = () => {
           </div>
           <div className="w-[8.5rem] text-center place-self-start">
             <p>
-              info@booktown
+              info@medisupply
               <br />
               foundation.org
             </p>
