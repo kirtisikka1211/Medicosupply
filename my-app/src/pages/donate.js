@@ -50,8 +50,8 @@ const DonatePage = () => {
         </div>
         <div className="border border-black p-5">
           <div className="relative flex flex-col justify-center min-h-screen overflow-hidden bg-white">
-          <div className="w-full p-20 m-auto bg-white border border-black bg-opacity-90 rounded-md lg:max-w-xl">
-  <h2 className="text-3xl font-semibold text-center text-blue-600 uppercase">
+            <div className="w-full p-20 m-auto bg-white border border-black bg-opacity-90 rounded-md lg:max-w-xl">
+              <h2 className="text-3xl font-semibold text-center text-blue-600 uppercase">
                 Upload Your Details Here
               </h2>
               <form className="mt-6 " onSubmit={handleSubmit}>
